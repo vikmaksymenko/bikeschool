@@ -35,15 +35,6 @@
 		bottom: 25px;
 	}
 	
-	/* Backgrounds will cover all the section
-	* --------------------------------------- */
-/*	#section0,
-	#section1,
-	#section2,
-	#section3{
-		background-size: cover;
-	}*/
-	
 	/* Defining each section background and styles 
 	* --------------------------------------- */
 	#section0{
@@ -115,6 +106,40 @@
 		color: #333;
 	}
 	
+	
+	@-webkit-keyframes slideInDown {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translateY(-2000px);
+		transform: translateY(-2000px);
+	  }
+	
+	  100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	  }
+	}
+	
+	@keyframes slideInDown {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translateY(-2000px);
+		-ms-transform: translateY(-2000px);
+		transform: translateY(-2000px);
+	  }
+	  	
+	  100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	  }
+	}
+	
+	h1 {
+	  -webkit-animation: slideInDown 1s;
+	  animation: slideInDown 1s;
+	}
+	
 	</style>
 
 	<!--[if IE]>
@@ -154,7 +179,7 @@
 	<div class="section " id="section0">
 		<div class="intro">
 			
-			<h1>Вело Академия</h1>
+			<h1 class="animated" >Вело Академия</h1>
 			<p>Научись вершить невозможное!</p>
 		</div>
 	</div>
