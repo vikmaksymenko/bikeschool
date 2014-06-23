@@ -1,0 +1,333 @@
+@CHARSET "ISO-8859-1";
+
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;    
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;	
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+
+	/* Style for our header texts 
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;	
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+	}
+	.intro p{
+		color: #fff;
+	}
+	
+	/* Centered texts in each section 
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+		background-size: cover;
+	}
+	
+	
+	/* Overwriting styles for the navigation dots (to place it where we want)
+	* --------------------------------------- */
+	.fullPage-slidesNav.bottom{
+		bottom: 25px;
+	}
+	
+	/* Defining each section background and styles 
+	* --------------------------------------- */
+	#section0{
+		background-image: url(../imgs/bg0.jpg);
+	}
+
+	#section2{
+		background-image: url(../imgs/bg2.jpg);
+		padding: 0 0 0;
+	}
+	#section3{
+		background-image: url(../imgs/bg3.jpg);
+		padding: 0 0 0;
+	}
+ 
+ 	#section4{
+		background-image: url(../imgs/bg4.jpg);
+		padding: 0 0 0;
+	}
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	.slide {
+		background-size: cover;
+		padding: 0 0 0;
+	}
+	
+	#slide1{
+		background-image: url(../imgs/slide_bg1.jpg);
+	}
+	#slide2{
+		background-image: url(../imgs/slide_bg2.jpg);
+	}
+	
+	#slide3{
+		background-image: url(../imgs/slide_bg3.jpg);
+	}
+	
+	#slide4{
+		background-image: url(../imgs/slide_bg4.jpg);
+	}
+	
+	#slide5{
+		background-image: url(../imgs/slide_bg5.jpg);
+	}
+	
+	#slide6{
+		background-image: url(../imgs/slide_bg6.jpg);
+	}
+	
+	#slide7{
+		background-image: url(../imgs/slide_bg7.jpg);
+	}
+	
+	#slide8{
+		background-image: url(../imgs/slide_bg8.jpg);
+	}
+	
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu li a {
+		color: #fff;
+	}
+	
+	#section2 h1{
+		color: #333;
+	}
+	
+	
+/*	@-webkit-keyframes slideInDown {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translateY(-2000px);
+		transform: translateY(-2000px);
+	  }
+	
+	  100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	  }
+	}
+	
+	@keyframes slideInDown {
+	  0% {
+		opacity: 0;
+		-webkit-transform: translateY(-2000px);
+		-ms-transform: translateY(-2000px);
+		transform: translateY(-2000px);
+	  }
+	  	
+	  100% {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	  }
+	}
+	
+	h1 {
+	  -webkit-animation: slideInDown 1s;
+	  animation: slideInDown 1s;
+	}*/
+	
+/* Teachers */
+/*		.grid {
+	padding: 20px 20px 100px 20px;
+	max-width: 1300px;
+	margin: 0 auto;
+	list-style: none;
+	text-align: center;
+	}
+	
+	.grid li {
+		display: inline-block;
+		width: 440px;
+		margin: 0;
+		padding: 20px;
+		text-align: left;
+		position: relative;
+	}
+	
+	.grid figure {
+		margin: 0;
+		position: relative;
+	}
+	
+	.grid figure img {
+		max-width: 100%;
+		display: block;
+		position: relative;
+	}
+	
+	.grid figcaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		background: #2c3f52;
+		color: #ed4e6e;
+	}
+	
+	.grid figcaption h3 {
+		margin: 0;
+		padding: 0;
+		color: #fff;
+	}
+	
+	.grid figcaption span:before {
+		content: 'by ';
+	}
+	
+	.grid figcaption a {
+		text-align: center;
+		padding: 5px 10px;
+		border-radius: 2px;
+		display: inline-block;
+		background: #ed4e6e;
+		color: #fff;
+	}
+	
+	/* Caption Style 7 */
+	.cs-style-7 li:first-child { z-index: 6; }
+	.cs-style-7 li:nth-child(2) { z-index: 5; }
+	.cs-style-7 li:nth-child(3) { z-index: 4; }
+	.cs-style-7 li:nth-child(4) { z-index: 3; }
+	.cs-style-7 li:nth-child(5) { z-index: 2; }
+	.cs-style-7 li:nth-child(6) { z-index: 1; }
+	
+	.cs-style-7 figure img {
+		z-index: 10;
+	}
+	
+	.cs-style-7 figcaption {
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+		-moz-transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+		transition: opacity 0.3s, height 0.3s, box-shadow 0.3s;
+		box-shadow: 0 0 0 0px #2c3f52;
+	}
+	
+	.no-touch .cs-style-7 figure:hover figcaption,
+	.cs-style-7 figure.cs-hover figcaption {
+		opacity: 1;
+		height: 130%;
+		box-shadow: 0 0 0 10px #2c3f52;
+	}
+	
+	.cs-style-7 figcaption h3 {
+		margin-top: 86%;
+	}
+	
+	.cs-style-7 figcaption h3,
+	.cs-style-7 figcaption span,
+	.cs-style-7 figcaption a {
+		opacity: 0;
+		-webkit-transition: opacity 0s;
+		-moz-transition: opacity 0s;
+		transition: opacity 0s;
+	}
+	
+	.cs-style-7 figcaption a {
+		position: absolute;
+		bottom: 20px;
+		right: 20px;
+	}
+	
+	.no-touch .cs-style-7 figure:hover figcaption h3,
+	.no-touch .cs-style-7 figure:hover figcaption span,
+	.no-touch .cs-style-7 figure:hover figcaption a,
+	.cs-style-7 figure.cs-hover figcaption h3,
+	.cs-style-7 figure.cs-hover figcaption span,
+	.cs-style-7 figure.cs-hover figcaption a {
+		-webkit-transition: opacity 0.3s 0.2s;
+		-moz-transition: opacity 0.3s 0.2s;
+		transition: opacity 0.3s 0.2s;
+		opacity: 1;
+	}
+	
+	@media screen and (max-width: 31.5em) {
+		.grid {
+			padding: 10px 10px 100px 10px;
+		}
+		.grid li {
+			width: 100%;
+			min-width: 300px;
+		}
+	} 
+	*/

@@ -4,143 +4,9 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
 	<title>FullScreen Backgrounds - fullPage.js</title>
-		
-	<link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css" />
-	<link rel="stylesheet" type="text/css" href="style/examples.css" />
-	<style>
-	
-	/* Style for our header texts 
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;	
-		font-family: arial,helvetica;
-		color: #fff;
-		margin:0;
-	}
-	.intro p{
-		color: #fff;
-	}
-	
-	/* Centered texts in each section 
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-		background-size: cover;
-	}
-	
-	
-	/* Overwriting styles for the navigation dots (to place it where we want)
-	* --------------------------------------- */
-	.fullPage-slidesNav.bottom{
-		bottom: 25px;
-	}
-	
-	/* Defining each section background and styles 
-	* --------------------------------------- */
-	#section0{
-		background-image: url(imgs/bg0.jpg);
-		
-	}
 
-	#section2{
-		background-image: url(imgs/bg2.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3{
-		background-image: url(imgs/bg3.jpg);
-		padding: 6% 0 0 0;
-	}
-	#section3 h1{
-		color: #000;
-	}
- 
- 	#section4{
-		background-image: url(imgs/bg4.jpg);
-		padding: 6% 0 0 0;
-	}
- 	/*Adding background for the slides
-	* --------------------------------------- */
-	.slide {
-		background-size: cover;
-		padding: 0 0 0;
-	}
-	
-	#slide1{
-		background-image: url(imgs/slide_bg1.jpg);
-	}
-	#slide2{
-		background-image: url(imgs/slide_bg2.jpg);
-	}
-	
-	#slide3{
-		background-image: url(imgs/slide_bg3.jpg);
-	}
-	
-	#slide4{
-		background-image: url(imgs/slide_bg4.jpg);
-	}
-	
-	#slide5{
-		background-image: url(imgs/slide_bg5.jpg);
-	}
-	
-	#slide6{
-		background-image: url(imgs/slide_bg6.jpg);
-	}
-	
-	#slide7{
-		background-image: url(imgs/slide_bg7.jpg);
-	}
-	
-	#slide8{
-		background-image: url(imgs/slide_bg8.jpg);
-	}
-	
-	/* Bottom menu
-	* --------------------------------------- */
-	#infoMenu li a {
-		color: #fff;
-	}
-	
-	#section2 h1{
-		color: #333;
-	}
-	
-	
-	@-webkit-keyframes slideInDown {
-	  0% {
-		opacity: 0;
-		-webkit-transform: translateY(-2000px);
-		transform: translateY(-2000px);
-	  }
-	
-	  100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	  }
-	}
-	
-	@keyframes slideInDown {
-	  0% {
-		opacity: 0;
-		-webkit-transform: translateY(-2000px);
-		-ms-transform: translateY(-2000px);
-		transform: translateY(-2000px);
-	  }
-	  	
-	  100% {
-		-webkit-transform: translateY(0);
-		-ms-transform: translateY(0);
-		transform: translateY(0);
-	  }
-	}
-	
-	h1 {
-	  -webkit-animation: slideInDown 1s;
-	  animation: slideInDown 1s;
-	}
-	
-	</style>
+	<link rel="stylesheet" type="text/css" href="style/main.css" />		
+	<link rel="stylesheet" type="text/css" href="style/jquery.fullPage.css" />
 
 	<!--[if IE]>
 		<script type="text/javascript">
@@ -179,7 +45,7 @@
 	<div class="section " id="section0">
 		<div class="intro">
 			
-			<h1 class="animated" >Вело Академия</h1>
+			<h1>Вело Академия</h1>
 			<p>Научись вершить невозможное!</p>
 		</div>
 	</div>
@@ -221,6 +87,24 @@
 	<div class="section" id="section2">
 		<div class="intro">
 			<h1>Наши преподаватели: </h1>
+<!--            <ul class="grid cs-style-7">
+                <li>
+                    <figure>
+                        <img src="imgs/sasha.jpg" alt="img01">
+                        <figcaption>
+                            <h3>Александр Олифир</h3>
+                            <span>Человек, родившийся на колесах</span>
+                            <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <!-- ... -->
+                    <!-- </figure>
+                </li>
+                <!-- ... -->
+            <!-- </ul> -->
 		</div>
 	</div>
     <div class="section" id="section3">
