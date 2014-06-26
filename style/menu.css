@@ -96,7 +96,6 @@ nav {
 	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	text-transform:uppercase;	
-	color:#333;
 	z-index:98;
 }
 
@@ -115,7 +114,7 @@ nav {
 	border-bottom: thin solid #69C;
 }
 
-#main-menu li:hover, li:hover a {
+#main-menu li:hover a {
 	background-color:#69C;
 	text-decoration:none;
 	color:#FFF;
@@ -123,7 +122,7 @@ nav {
 
 #main-menu a {
 	text-decoration:none;
-	color: black;
+	color: #69C;
 	line-height:50px;
 	top: 0;
 	padding-left: 25px;
