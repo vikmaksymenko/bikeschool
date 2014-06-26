@@ -173,15 +173,17 @@ nav {
 .closed span:before {
 	-webkit-transform: translateY(-250%);
 	transform: translateY(-250%);
+	background-color: #fff;
 }
 
 .closed span:after {
 	-webkit-transform: translateY(250%);
 	transform: translateY(250%);
+	background-color: #fff;
 }
 
 .closed span {
-	background-color:#69C;
+	background-color:#fff;
 }
 
 .opened span:before {
