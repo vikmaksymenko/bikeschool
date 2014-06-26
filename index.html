@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
-        <title>FullScreen Backgrounds - fullPage.js</title>
+        <title>Школа "Феникс"</title>
     
         <link rel="stylesheet" href="style/main.css" />		
         <link rel="stylesheet" href="style/jquery.fullPage.css" />
         <link rel="stylesheet" href="style/menu.css" />
+    	<link rel="stylesheet" href="style/teachers.css" />
     
         <link href='http://fonts.googleapis.com/css?family=OpenSans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     
@@ -34,7 +35,6 @@
             $(document).ready(function() {
                 $('#fullpage').fullpage({
                     anchors: ['start', 'lessons', 'teachers', 'review', 'contacts'],
-                    slidesColor: ['#8FB98B', '#DE564B', '#EAE1C0'],
                     slidesNavigation: true,			
                 });
             
@@ -67,7 +67,7 @@
         <div id="fullpage">
             <div class="section st-content-inner" id="section0">
                 <div class="intro">
-                    <h1>Вело Академия</h1>
+                    <h1>Школа "Феникс"</h1>
                     <p>Научись вершить невозможное!</p>
                 </div>
             </div>
@@ -101,26 +101,23 @@
                 </div>
             </div>
             <div class="section" id="section2">
-                <div class="intro">
-                    <h1>Наши преподаватели: </h1>
-        <!--            <ul class="grid cs-style-7">
-                        <li>
-                            <figure>
-                                <img src="imgs/sasha.jpg" alt="img01">
-                                <figcaption>
-                                    <h3>Александр Олифир</h3>
-                                    <span>Человек, родившийся на колесах</span>
-                                    <a href="http://dribbble.com/shots/1115632-Camera">Take a look</a>
-                                </figcaption>
-                            </figure>
-                        </li>
-                        <li>
-                            <figure>
-                                <!-- ... -->
-                            <!-- </figure>
-                        </li>
-                        <!-- ... -->
-                    <!-- </ul> -->
+                <div class="grid">
+   	                <h1>Преподаватели</h1> 
+                        <figure class="effect-sarah"> 
+                          <img src="imgs/sasha.jpg"/>
+                          <figcaption>
+                            <h2 style="color:#FFF">Александр <span>Олифир</span></h2>
+                            <p>Человек, родившийся на колесах</p>
+                          </figcaption>
+                        </figure>
+                        <figure class="effect-sarah"> 
+                          <img src="imgs/question.jpg"/>
+                          <figcaption>
+                            <h2>Вакансия <span>открыта!</span></h2>
+                            <p>Присоединяйтесь к нашим специалистам и передавайте свои знания</p>
+                          </figcaption>
+                       </figure>
+
                 </div>
             </div>
             <div class="section" id="section3">
@@ -129,9 +126,15 @@
                 </div>
             </div>
             <div class="section" id="section4">
-                <div class="intro">
                     <h1>Свяжитесь с нами</h1>
-                </div>
+              		<section id="icons">
+						<a href="https://www.vk.com" ><img src="imgs/vk.png"></a>
+	            	    <a href="https://www.facebook.com/"><img src="imgs/fb.png"></a>
+					</section>
+                                        <footer id="author">
+                    	<small>Разработано <a href="https://vk.com/id69772751">Виктором Максименко</a><br>                
+                        </small>
+                    </footer>
             </div>
         </div>
         
