@@ -7,9 +7,8 @@ form,fieldset,input,textarea,p,blockquote,th,td {
     padding: 0;
     margin: 0;
 }
-a{
-	text-decoration:none;
-}
+
+
 table {
     border-spacing: 0;    
 }
@@ -78,7 +77,9 @@ p{
 	* --------------------------------------- */
 	h1{
 		font-size: 5em;	
-		font-family: arial,helvetica;
+		font-family: 'Open Sans', sans-serif;
+		font-weight:bold;
+		
 		color: #fff;
 		margin:0;
 	}
@@ -118,7 +119,8 @@ p{
  	#section4{
 		background-image: url(../imgs/bg4.jpg);
 		padding: 0 0 0;
-	}
+		
+	} 
  	/*Adding background for the slides
 	* --------------------------------------- */
 	.slide {
@@ -330,4 +332,4 @@ p{
 			min-width: 300px;
 		}
 	} 
-	*/
+	
