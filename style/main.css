@@ -1,201 +1,218 @@
 @CHARSET "ISO-8859-1";
-
 /* Reset CSS
  * --------------------------------------- */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
-    padding: 0;
-    margin: 0;
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	padding: 0;
+	margin: 0;
 	font-family: 'Open Sans', sans-serif;
 }
-
 table {
-    border-spacing: 0;    
+	border-spacing: 0;
 }
-fieldset,img {
-    border: 0;
+fieldset, img {
+	border: 0;
 }
-address,caption,cite,code,dfn,em,strong,th,var {
-    font-weight: normal;
-    font-style: normal;
+address, caption, cite, code, dfn, em, strong, th, var {
+	font-weight: normal;
+	font-style: normal;
 }
-strong{
+strong {
 	font-weight: bold;
 }
-ol,ul {
-    list-style: none;
-    margin:0;
-    padding:0;
+ol, ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-caption,th {
-    text-align: left;
-
+caption, th {
+	text-align: left;
 }
-h1,h2,h3,h4,h5,h6, p {
-    font-weight: normal;
-    font-size: 100%;
-    margin:0;
-    padding:0;
-	color:#fff;
-	text-shadow:3px 3px 5px #69C;
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	text-shadow: 3px 3px 5px  #69C;
 }
-q:before,q:after {
-    content:'';
+q:before, q:after {
+	content: '';
 }
-abbr,acronym { border: 0;
+abbr, acronym {
+	border: 0;
 }
-
-
 /* Custom CSS
  * --------------------------------------- */
-body{
-	background-color:#69C;
+body {
+	background-color: #69C;
 }
-.wrap{
+.wrap {
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
 	position: relative;
 }
-
-p{
+p {
 	font-size: 2em;
 	width: 50%;
 	margin: 0 auto;
-	color:#000;
-	font-style:italic;
-	text-shadow:2px 2px 3px #fff;
+	color: #000;
+	font-style: italic;
+	text-shadow: 0px 0px 3px #fff ;
+}
+/* Style for our header texts 
+	* --------------------------------------- */
+h1 {
+	font-size: 5em;
+}
+/* Centered texts in each section 
+	* --------------------------------------- */
+.section {
+	text-align: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+/* Overwriting styles for the navigation dots (to place it where we want)
+	* --------------------------------------- */
+.fullPage-slidesNav.bottom {
+	bottom: 25px;
+}
+/* Defining each section background and styles 
+	* --------------------------------------- */
+#section0 {
+	background-image: url(../imgs/bg0.jpg);
+}
+#section2 {
+	background-image: url(../imgs/bg2.jpg);
+	padding: 0 0 0;
+}
+#section3 {
+	background-image: url(../imgs/bg3.jpg);
+	padding: 0 0 0;
+}
+#section4 {
+	background-image: url(../imgs/bg4.jpg);
+	padding: 0 0 0;
+}
+/*Adding background for the slides
+	* --------------------------------------- */
+.slide {
+	background-size: cover;
+	padding: 0 0 0;
+}
+#slide1 {
+	background-image: url(../imgs/slide_bg1.jpg);
+}
+#slide2 {
+	background-image: url(../imgs/slide_bg2.jpg);
+}
+#slide3 {
+	background-image: url(../imgs/slide_bg3.jpg);
+}
+#slide4 {
+	background-image: url(../imgs/slide_bg4.jpg);
+}
+#slide5 {
+	background-image: url(../imgs/slide_bg5.jpg);
+}
+#slide6 {
+	background-image: url(../imgs/slide_bg6.jpg);
+}
+#slide7 {
+	background-image: url(../imgs/slide_bg7.jpg);
+}
+#slide8 {
+	background-image: url(../imgs/slide_bg8.jpg);
+}
+.review {
+	height: 100%;
+	width:100%;
 }
 
-
-	/* Style for our header texts 
-	* --------------------------------------- */
-	h1{
-		font-size: 5em;	
-	}
-	
-	/* Centered texts in each section 
-	* --------------------------------------- */
-	.section{
-		text-align:center;
-		background-size: cover;
-		width:100%;
-		height:100%;
-		
-	}
-	
-	
-	/* Overwriting styles for the navigation dots (to place it where we want)
-	* --------------------------------------- */
-	.fullPage-slidesNav.bottom{
-		bottom: 25px;
-	}
-	
-	/* Defining each section background and styles 
-	* --------------------------------------- */
-	#section0{
-		background-image: url(../imgs/bg0.jpg);
-	}
-
-	#section2{
-		background-image: url(../imgs/bg2.jpg);
-		padding: 0 0 0;
-	}
-	#section3{
-		background-image: url(../imgs/bg3.jpg);
-		padding: 0 0 0;
-	}
- 
- 	#section4{
-		background-image: url(../imgs/bg4.jpg);
-		padding: 0 0 0;
-		
-	} 
- 	/*Adding background for the slides
-	* --------------------------------------- */
-	.slide {
-		background-size: cover;
-		padding: 0 0 0;
-	}
-	
-	#slide1{
-		background-image: url(../imgs/slide_bg1.jpg);
-	}
-	#slide2{
-		background-image: url(../imgs/slide_bg2.jpg);
-	}
-	
-	#slide3{
-		background-image: url(../imgs/slide_bg3.jpg);
-	}
-	
-	#slide4{
-		background-image: url(../imgs/slide_bg4.jpg);
-	}
-	
-	#slide5{
-		background-image: url(../imgs/slide_bg5.jpg);
-	}
-	
-	#slide6{
-		background-image: url(../imgs/slide_bg6.jpg);
-	}
-	
-	#slide7{
-		background-image: url(../imgs/slide_bg7.jpg);
-	}
-	
-	#slide8{
-		background-image: url(../imgs/slide_bg8.jpg);
-	}
-	
-	@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-  }
-
-  50% {
-    -webkit-transform: scale(1.25);
-  }
-
-  100% {
-    -webkit-transform: scale(1);
-  }
+.review-item {
+	min-width:40%;
+	background-color: #fff;
+	text-align: left;
+	font-size:1.2em;
+	font-family: 'Marck Script', cursive;
+	min-height:240px;
+	display:inline-block;
+	box-shadow: 0px 0px 3px 5px #fff;
+}
+.review-item img {
+	float:left;
+	outline: hidden;
+	border-radius: 100%;
+	width:200px;
+	height:200px;
+	padding: 20px;
+}
+.review-item figcaption {
+	padding-left:240px;
+	padding-top: 10px;
+	text-align:center;
+	display:block;
+}
+.review-item h2 {
+	top: -10px;
+	color: #69C;
+	padding-top:10px;
+	box-sizing: content-box;
+	padding: 10px;
+	margin:10px;
+	font-family: 'Marck Script', cursive;
+	display:block;
+	color: #fff;
+	background-color:#69C;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.25);
-  }
-
-  100% {
-    transform: scale(1);
-  }
+.review-item article {
+	padding: 10px;
+	display: block;
+	color: #69C;
+	border-bottom:solid thin #69C;
+	border-top:solid thin #69C;
+	margin: 10px;
 }
-
+ @-webkit-keyframes pulse {
+ 0% {
+ -webkit-transform: scale(1);
+}
+ 50% {
+ -webkit-transform: scale(1.25);
+}
+ 100% {
+ -webkit-transform: scale(1);
+}
+}
+ @keyframes pulse {
+ 0% {
+ transform: scale(1);
+}
+ 50% {
+ transform: scale(1.25);
+}
+ 100% {
+ transform: scale(1);
+}
+}
 #icons {
 	padding: 5%;
 }
-
 #icons a {
 	margin: 5%;
 }
-
 #icons a img:hover {
-  animation-name: pulse;
-  -webkit-animation-name: pulse;
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
-  animation-iteration-count:infinite;
-  -webkit-animation-iteration-count:infinite;
+	animation-name: pulse;
+	-webkit-animation-name: pulse;
+	animation-duration: 1s;
+	-webkit-animation-duration: 1s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
 }
-
 #author {
 	position: absolute;
-	bottom:0;
-	text-align:left;
+	bottom: 0;
+	text-align: left;
 }
