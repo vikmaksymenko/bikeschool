@@ -15,6 +15,8 @@
 	width: 33.333%;
 	background: #69C;
 	text-align: center;
+	line-height:1.5;
+	border: solid #FFF 3px;
 }
 
 .grid figure img {
@@ -27,8 +29,8 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	padding: 1em;
 	color: #fff;
+	padding: 1em;
 	text-transform: uppercase;
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
@@ -43,8 +45,7 @@
 /* Anchor will cover the whole item by default */
 /* For some effects it will show as a button */
 
-.grid figure h2 {
-	word-spacing: -0.15em;
+.grid figure h2{
 	font-weight: 300;
 }
 
@@ -52,14 +53,19 @@
 	font-weight: 800;
 }
 
-.grid figure h2,
-.grid figure p {
-	margin: 0;
-}
-
 .grid figure p {
 	letter-spacing: 1px;
 	font-size: 68.5%;
+}
+
+.grid .post {
+	bottom:0;
+	display:block;
+	position:relative;
+	font-size:1.5em;
+	background: #69C;
+	border-top: solid #FFF 3px;
+	font-family: 'Marck Script', cursive;
 }
 
 /*---------------*/
@@ -126,6 +132,7 @@ figure.effect-sarah p {
 }
 
 figure.effect-sarah:hover p {
+	
 	opacity: 1;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);

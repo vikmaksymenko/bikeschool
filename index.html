@@ -7,22 +7,27 @@
       <link rel="stylesheet" href="style/jquery.fullPage.css" />
       <link rel="stylesheet" href="style/menu.css" />
       <link rel="stylesheet" href="style/teachers.css" />
+      
       <link href='http://fonts.googleapis.com/css?family=OpenSans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
       <link href='http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+      
       <!--[if IE]>
       <script type="text/javascript">
          var console = { log: function() {} };
       </script>
       <![endif]-->
+      
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
       <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-      <!-- This following line is needed in case of using the default easing option or when using another
-         one rather than "linear" or "swing". You can also add the full jQuery UI instead of this file if you prefer -->
-      <script src="scripts/jquery.easings.min.js"></script>
+      
       <!-- This following line needed in the case of using the plugin option `scrollOverflow:true` -->
-      <script type="text/javascript" src="scripts/jquery.slimscroll.min.js"></script>
-      <script type="text/javascript" src="scripts/jquery.fullPage.js"></script>
-      <script type="text/javascript">
+      
+      <script src="../jquery.js"></script>
+      
+      <script src="scripts/jquery.easings.min.js"></script>
+      <script src="scripts/jquery.slimscroll.min.js"></script>
+      <script src="scripts/jquery.fullPage.js"></script>
+      <script>
          $(document).ready(function() {
              $('#fullpage').fullpage({
                  anchors: ['start', 'lessons', 'teachers', 'review', 'contacts'],
@@ -47,7 +52,6 @@
                      $buttonOpacity = 0;
                  }
              });
-         
          $("#main-menu a").click(function(){
          $("#but").trigger('click');
          });
@@ -58,7 +62,7 @@
       <div id="fullpage">
          <div class="section st-content-inner" id="section0">
             <div class="intro">
-               <h1>Школа "Феникс"</h1>
+               <h1>Спортивная школа "Феникс"</h1>
                <p>Научись вершить невозможное!</p>
             </div>
          </div>
@@ -77,19 +81,26 @@
             <div class="slide" id="slide4" data-anchor="slide3">
                <h1>...и бордюры</h1>
             </div>
-            <div class="slide" id="slide5" data-anchor="slide5">
+            <div class="slide" id="slide5" data-anchor="slide3">
+               <h1>Откроем для Вас велотуризм</h1>
+            </div>
+            <div class="slide" id="slide6" data-anchor="slide5">
                <h1>Изучим правила дорожного движения...</h1>
             </div>
-            <div class="slide" id="slide6" data-anchor="slide6">
+            <div class="slide" id="slide7" data-anchor="slide6">
                <h1>...и устройство велоcипеда</h1>
             </div>
-            <div class="slide" id="slide7" data-anchor="slide7">
+            <div class="slide" id="slide8" data-anchor="slide7">
                <h1>А еще научим кататься на скейте...</h1>
                <p>если двух колес вам мало</p>
             </div>
-            <div class="slide" id="slide8" data-anchor="slide8">
+            <div class="slide" id="slide9" data-anchor="slide8">
                <h1>...или роликах</h1>
                <p>если и четырех недостает</p>
+            </div>
+            <div class="slide" id="slide10" data-anchor="slide9">
+               <h1>А в конце обучения вы получите сертификат</h1>
+               <p>и возможность смотреть свысока на несертифицированных ездоков</p>
             </div>
          </div>
          <div class="section" id="section2">
@@ -98,16 +109,34 @@
                <figure class="effect-sarah">
                   <img src="imgs/sasha.jpg"/>
                   <figcaption>
-                     <h2 style="color:#FFF">Александр <span>Олифир</span></h2>
+                     <h2><span>Александр Олифир</span></h2>
                      <p>Человек, родившийся на колесах</p>
                   </figcaption>
+ 				  <h1 class="post">Создатель проекта.<br>Кросс-кантри.</h1>
+               </figure>
+               <figure class="effect-sarah">
+                  <img src="imgs/igor.jpg"/>
+                  <figcaption>
+                     <h2><span>Игорь Глаголевский</span></h2>
+                     <p>Объездил на двух колесах пол мира</p>
+                  </figcaption>
+ 				  <h1 class="post">Велотуризм<br>ПДД для велосипедистов</h1>
+               </figure>               
+               <figure class="effect-sarah">
+                  <img src="imgs/vova.jpg"/>
+                  <figcaption>
+                     <h2><span>Владимир Кузьмич</span></h2>
+                     <p>Ролики - это моя жизнь</p>
+                  </figcaption>
+ 				  <h1 class="post">Ролики</h1>
                </figure>
                <figure class="effect-sarah">
                   <img src="imgs/question.jpg"/>
                   <figcaption>
-                     <h2>Вакансия <span>открыта!</span></h2>
+                     <h2><span>?</span></h2>
                      <p>Присоединяйтесь к нашим специалистам и передавайте свои знания</p>
                   </figcaption>
+ 				  <h1 class="post">Вакансия открыта</h1>
                </figure>
             </div>
          </div>
@@ -139,9 +168,11 @@
          </div>
          <div class="section" id="section4">
             <h1>Свяжитесь с нами</h1>
-            <section id="icons"> <a href="https://www.vk.com" ><img src="imgs/vk.png"></a> <a href="https://www.facebook.com/"><img src="imgs/fb.png"></a> </section>
-            <footer id="author"> <small>Разработано <a href="https://vk.com/id69772751">Виктором Максименко</a><br>
-               </small> 
+            <section id="icons"> <a href="https://vk.com/bikeschool_phenix" ><img src="imgs/vk.png"></a> <a href="https://www.facebook.com/"><img src="imgs/fb.png"></a> </section>
+            <h3> "Спортивная школа "Феникс":  </h3>
+            <h2>063-415-41-12</h2> 
+            <h3>Александр</h3> 
+            <footer id="author"> <small>Разработано <a href="https://vk.com/id69772751">Виктором Максименко</a><br></small> 
             </footer>
          </div>
       </div>

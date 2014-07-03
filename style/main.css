@@ -65,6 +65,7 @@ p {
 h1 {
 	font-size: 5em;
 }
+
 /* Centered texts in each section 
 	* --------------------------------------- */
 .section {
@@ -124,6 +125,12 @@ h1 {
 }
 #slide8 {
 	background-image: url(../imgs/slide_bg8.jpg);
+}
+#slide9 {
+	background-image: url(../imgs/slide_bg9.jpg);
+}
+#slide10 {
+	background-image: url(../imgs/slide_bg10.jpg);
 }
 .review {
 	height: 100%;
@@ -197,12 +204,24 @@ h1 {
  transform: scale(1);
 }
 }
+#section4 h2 {
+	font-size:3em;
+}
+#section4 h3 {
+	font-size:2em;
+	font-style:italic;
+}
 #icons {
 	padding: 5%;
 }
 #icons a {
 	margin: 5%;
 }
+
+#icons a img {
+	width: 10%;
+}
+
 #icons a img:hover {
 	animation-name: pulse;
 	-webkit-animation-name: pulse;
